@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { HttpClient } from '@angular/common/http';
+import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserAnimationsModule  } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from './app.component';
-import { MainModule } from './main/main.module';
 import { MaterialModule } from './material.module';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -12,10 +14,10 @@ import { MaterialModule } from './material.module';
   ],
   imports: [
     BrowserModule,
-    MainModule,
-    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
     MaterialModule,
-    HttpClient
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

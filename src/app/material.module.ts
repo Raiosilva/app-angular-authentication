@@ -18,7 +18,6 @@ import {
   MatDividerModule,
   MatExpansionModule,
   MatGridListModule,
-  MatIconModule,
   MatInputModule,
   MatListModule,
   MatMenuModule,
@@ -42,6 +41,7 @@ import {
   MatTreeModule,
 } from '@angular/material';
 
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [ ],
