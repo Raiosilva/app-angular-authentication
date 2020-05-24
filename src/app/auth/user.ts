@@ -1,6 +1,6 @@
 export interface User {
   _id: string;
-  fisrtname: string;
+  firstname: string;
   lastname: string;
   password: string;
   mobilephone: string;
@@ -8,4 +8,5 @@ export interface User {
   address: string;
   state: string;
   city: string;
+  token: string;
 }
