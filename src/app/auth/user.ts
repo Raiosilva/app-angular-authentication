@@ -9,4 +9,5 @@ export interface User {
   state: string;
   city: string;
   token: string;
+  email: string;
 }

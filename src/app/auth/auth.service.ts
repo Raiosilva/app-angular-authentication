@@ -36,4 +36,10 @@ export class AuthService {
   getUser(): Observable<User> {
     return this.subjUser$.asObservable();
   }
+
+  logout() {
+    localStorage.removeItem('token');
+    this.subjLoggedIn$.next(false);
+    this.subjUser$.next(null);
+  }
 }
