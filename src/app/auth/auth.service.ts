@@ -41,6 +41,7 @@ export class AuthService {
     return this.http.get<User>(`${this.url}/user`).pipe(
       tap((u: User) => {
         if (u) {
+          localStorage.setItem('token', u.token);
           this.subjLoggedIn$.next(true);
           this.subjUser$.next(u);
         }
